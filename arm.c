@@ -1,7 +1,8 @@
 #include <stdio.h>
 int main() {
-    int num, Num1, remainder, result;
+    int num, Num1, rem, result;
     result=0;
+    rem=0;
     printf("Enter a three-digit integer: ");
     scanf("%d", &num);
     if(num==0)
@@ -9,8 +10,8 @@ int main() {
         exit(0);
     Num1 = num;
     while (Num1 != 0) {
-        remainder = Num1 % 10;
-        result += remainder * remainder * remainder;
+        rem = Num1 % 10;
+        result += rem * rem * rem;
         Num1 /= 10;
     }
     if (result == num)
