@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main() {
-    int num, Num1, remainder, result = 0;
+    int num, Num1, remainder, result;
+    result=0;
     printf("Enter a three-digit integer: ");
     scanf("%d", &num);
     Num1 = num;
