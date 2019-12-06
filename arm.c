@@ -1,11 +1,12 @@
 #include <stdio.h>
 int main() {
-    int num, Num1, rem, result;
+    int num, Num1,result;
     result=0;
     printf("Enter a three-digit integer: ");
     scanf("%d", &num);
     Num1 = num;
     while (Num1 != 0) {
+        int rem;
         rem = Num1 % 10;
         result += rem * rem * rem;
         Num1 /= 10;
